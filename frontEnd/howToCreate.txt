@@ -1,0 +1,32 @@
+Location will be \chat-app\frontend
+
+    1. To create react app run 'npm create vite@latest .'
+        - choose 'React' as framework
+        - choose 'JavaScript' as a variant
+    2. Run 'npm install' to get node_modules folder
+    3. Run 'npm run dev' to run/get the localhost frontend URL
+
+Location will be \chat-app
+
+    1. Run 'npm init -y' to create package.json
+        - change the 'main' to 'app.js' in package.json
+        - create 'app.js' inside \chat-app\backend
+    2. Install all the required packages for the express application as:
+        - run 'npm i express dotenv cookie-parser bcryptjs mongoose socket.io jsonwebtoken'
+    
+    Run the Server
+
+        1. To run the server automatically after every change, add 'nodemon' as dev dependency as:
+            - 'npm i nodemon --save-dev'
+
+        1. change the 'script' from the package.json, remove everything and add a script as:
+            -   "scripts": {
+		            "server": "nodemon backEnd/app.js"
+	            }
+            - run 'npm run server' to run the server
+
+Changing the importing style from 'JS' to 'module'
+    - While adding any package we write it as 'const express = require("express");', this is the JS style of importing
+    - To change the JS style into module style as 'import express from "express";'
+    - Add a new parameter to package.json below scripts as '"type": "module",'
+    - Now remove all the JS style importing to module style importing
