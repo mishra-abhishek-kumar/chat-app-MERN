@@ -60,3 +60,7 @@ Adding components
     - Remove the unnecessary lines from App.jsx
     - Clear everything from App.css
     - Kill the terminal and run it again with 'npm run dev'
+
+Adding ReactIcons (Location frontEnd)
+    - visit 'https://react-icons.github.io/react-icons/'
+    - run 'npm install react-icons --save'
