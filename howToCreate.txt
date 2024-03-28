@@ -1,3 +1,5 @@
+Project Instruction: https://youtu.be/HwCqsOis894?si=_2nRRrwrXYzVmKt9
+
 Location will be \chat-app\frontend
 
     1. To create react app run 'npm create vite@latest .'
@@ -30,3 +32,30 @@ Changing the importing style from 'JS' to 'module'
     - To change the JS style into module style as 'import express from "express";'
     - Add a new parameter to package.json below scripts as '"type": "module",'
     - Now remove all the JS style importing to module style importing
+
+Installing TailwindCSS with vite (Location will be \chat-app\frontEnd)
+    - Go to 'https://tailwindcss.com/docs/guides/vite'
+    - run 'npm install -D tailwindcss postcss autoprefixer' to install TailwindCSS
+    - remove and add the content from 'tailwind.config.js' file
+        - /** @type {import('tailwindcss').Config} */
+            export default {
+	            content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	            theme: {
+		            extend: {},
+	            },
+	            plugins: [],
+            };
+    - remove and add the content from './src/index.css' file
+        - @tailwind base;
+          @tailwind components;
+          @tailwind utilities;
+    
+Using daisyUI with TailwindCSS for the Reach components (Location will be \chat-app\frontEnd)
+    - run 'npm i -D daisyui@latest' for adding daisyUI
+    - add plugin to 'tailwind.config.js' file 'plugins: [require("daisyui")]'
+
+Adding components 
+    - Copy JSX for the component required, add it to App.jsx
+    - Remove the unnecessary lines from App.jsx
+    - Clear everything from App.css
+    - Kill the terminal and run it again with 'npm run dev'
