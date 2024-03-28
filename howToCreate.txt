@@ -51,6 +51,7 @@ Installing TailwindCSS with vite (Location will be \chat-app\frontEnd)
           @tailwind utilities;
     
 Using daisyUI with TailwindCSS for the Reach components (Location will be \chat-app\frontEnd)
+    - Go to 'https://daisyui.com/docs/install/'
     - run 'npm i -D daisyui@latest' for adding daisyUI
     - add plugin to 'tailwind.config.js' file 'plugins: [require("daisyui")]'
 
